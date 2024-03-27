@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+    <head>
+        <link rel="stylesheet" href="style.css">
+        <meta charset="UTF-8">
+        <title>
+                Formulário
+        </title>
+        <meta name="autor" content="Julia Ludwig">
+        <meta name="assunto" content="Página de Formulário">
+        <link rel="stylesheet" href="style.css" type="text/css">
+    </head>
+    <body>
+        <header>
+            <h1>Formulário</h1>
+            <hr>
+        </header>
+        <main>
+            <article id="formulario">
+                <h2>Formulário</h2>
+                <p>Caso você tenha algum animal de estimação responda a este formulário</p>
+                <form action="cadastro.php" method="get">
+                    <fieldset>
+                        <legend>
+                            Informações sobre seu pet
+                        </legend>
+                        <p>
+                            <label for="nomePet">Qual o nome do seu pet?</label>
+                        </p>
+                        <p>
+                            <input type="text" name="nomePet" id="nomePet" placeholder="Ex. Rex" autocomplete="on" required autofocus>
+                            <label for="quantidadePet">Quantos pets você tem?</label>
+                            <input type="number" name="quantidadePet" id="quantidadePet" min="0" step="1" value="1" required>
+                        </p>
+                        <p>Seu pet fica em casa ou sai pra rua?</p>
+                        <p>
+                            <input type="radio" name="casaRua" id="casa" value="casa">
+                            <label for="casa">Fica em casa</label>
+                        </p>
+                        <p>
+                            <input type="radio" name="casaRua" id="rua" value="rua">
+                            <label for="rua">Sai pra rua</label>
+                        </p>
+                        <p>Como é a personalidade do seu pet?</p>
+                        <p>
+                            <input type="checkbox" name="personalidade" id="manhoso">
+                            <label for="manhoso">Manhoso</label>
+                        </p>
+                        <p>
+                            <input type="checkbox" name="personalidade" id="preguiçoso">
+                            <label for="preguiçoso">preguiçoso</label>
+                        </p>
+                        <p>
+                            <input type="checkbox" name="personalidade" id="espoleta">
+                            <label for="espoleta">Espoleta</label>
+                        </p>
+                        <p>
+                            <input type="checkbox" name="personalidade" id="desconfiado">
+                            <label for="desconfiado">Desconfiado</label>
+                        </p>
+                    </fieldset>
+                    <fieldset>
+                        <legend>Seu pet na nossa galeria</legend>
+                        <p>Anexe uma foto para colocarmos na nossa galeria</p>
+                            <input type="file" name="anexoFoto" id="anexoFoto">
+                        <p>
+                            <label for="mensagem">Legenda da foto</label>
+                        </p>
+                        <textarea name="mensagem" id="mensagem" cols="50" rows="10" placeholder="Insira a legenda da sua foto aqui"></textarea>
+                    </fieldset>
+                    <br>
+                    <button type="submit">Enviar</button>
+                    <button type="reset">Redefinir</button>
+                </form>
+            </article>
+            <hr>
+            <a href="file:///C:/Users/julia/OneDrive/%C3%81rea%20de%20Trabalho/AV1/formulario.html">voltar ao topo</a>
+            <a href="file:///C:/Users/julia/OneDrive/%C3%81rea%20de%20Trabalho/AV1/index.html">voltar ao menu inicial</a>
+        </main>
+        <footer>
+            <p>
+                &lt; &copy; Copyright Página de Fotos do Céu&gt;
+            </p>
+        </footer>
+    </body>
+</html>
